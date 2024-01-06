@@ -14,8 +14,10 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: #f0f0f0
 }
+
+
 
 .wrapper {
   padding-top: 30px;
@@ -32,7 +34,7 @@ header {
 
 .card {
   background-color: hsl(0, 0%, 100%);
-  border-radius: 5px;
+  border-radius: 20px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
   color: hsl(206, 17%, 28%);
@@ -48,6 +50,10 @@ header {
   width: 100%;
   background: #e7e9eb;
   height: 2px;
+}
+
+.card-header{
+  text-align: center;
 }
 
 .card-body {
@@ -97,6 +103,11 @@ button[disabled] {
   float: right;
 }
 
+/* Additional styling for the password box and length display */
+#passwordLength {
+  margin-bottom: 10px;
+}
+
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -135,3 +146,27 @@ button[disabled] {
     font-size: 0.8rem;
   }
 }
+
+
+
+/* Footer styles */
+.footer {
+  padding: 30px;
+  clear: both;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 30px;
+}
+
+.footer h2 {
+  font-size: 20px;
+}
+
+.separator {
+  border: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+/* Footer styles */

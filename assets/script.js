@@ -90,7 +90,6 @@ var upperCasedCharacters = [
 
 // Function to prompt user for password options
 function getPasswordOptions() {
-  //Prompt for Password Length
   var length = parseInt(
     prompt(
       "How many characters(between 8-128) would you like your password to contain?"
@@ -101,19 +100,15 @@ function getPasswordOptions() {
     alert("Password length must be a number between 8-128 characters");
     return;
   }
-  //Prompt for Special Characters
   var hasSpecialCharacters = confirm(
     "Click OK to confirm including special characters."
   );
-  //Prompt for Numeric Characters
   var hasNumericCharacters = confirm(
     "Click OK to confirm including numeric characters."
   );
-  //Prompt for Lowercase Characters
   var hasLowerCasedCharacters = confirm(
     "Click OK to confirm including lowercase characters."
   );
-  //Prompt for Uppercase Characters
   var hasUpperCasedCharacters = confirm(
     "Click OK to confirm including uppercase characters."
   );
@@ -165,15 +160,11 @@ function generatePassword() {
     result = result.concat(upperCasedCharacters);
   }
 
-  console.log(result);
-
   //get random characters from result array
   var randomResult = [];
   for (var i = 0; i < options.length; i++) {
     randomResult.push(getRandom(result));
   }
-  console.log(randomResult);
-
   //Join the array and return it
   return randomResult.join("");
 }
@@ -181,9 +172,7 @@ function generatePassword() {
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
-  console.log(password);
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
 }
 
@@ -205,8 +194,6 @@ var clearBtn = document.querySelector("#clear");
 
 // Add event listener to clear button
 clearBtn.addEventListener("click", clearPassword);
-
-
 
 // Get references to the #copy element
 var copyBtn = document.querySelector("#copy");
