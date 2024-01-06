@@ -1,4 +1,4 @@
-# Password Generator Using JavaScript
+# Secure Password Generator
 
 ## Overview
 
